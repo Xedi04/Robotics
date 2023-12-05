@@ -1,0 +1,25 @@
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin mini{
+    width: 100%;
+    @include flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+
+@mixin btn{
+  
+        width: 27%;
+        color: $white;
+        padding: 10px;
+        border: none;
+        background-image: url("https://preview.colorlib.com/theme/robotics/img/banner-bg.jpg.webp");
+        background-size: cover;
+        background-position: center;
+    
+}

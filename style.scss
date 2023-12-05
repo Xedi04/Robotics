@@ -1,0 +1,810 @@
+@import "mixin";
+@import "variable";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1250px;
+    width: 100%;
+    margin: auto;
+    padding: 0 32px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+
+}
+
+nav {
+    width: 100%;
+    background-color: $nav;
+    position: fixed;
+    z-index: 1000;
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        //align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        color: $white;
+
+        .logo {
+            // width: 15%;
+            // background-color: red;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .div-ul {
+            width: 42%;
+            @include flex;
+
+            ul {
+                width: 100%;
+                list-style: none;
+                @include flex;
+                justify-content: space-between;
+
+                li {
+                    font-size: 11px;
+                    font-weight: 300;
+                }
+            }
+
+            i {
+                font-size: 30px;
+                display: none;
+            }
+
+
+        }
+    }
+
+}
+
+
+//ILK SECTION
+
+
+.improved{
+    width: 100%;
+    background-image: url("https://preview.colorlib.com/theme/robotics/img/banner-bg.jpg.webp");
+    background-size: cover;
+    background-position: center;
+    .impro{
+        @include mini;
+        padding: 100px 0;
+        .impro-1{
+            width: 50%;
+            display:  flex;
+            flex-direction: column;
+            color: $white;
+           // padding: 25px;
+            line-height: 70px;
+            h1{
+                font-size: 60px;
+                font-weight: 400;
+            }
+            #btn1{
+                width: 150px;
+                background-color: white;
+                padding: 14px;
+                border: none;
+            }
+        }
+        .impro-2{
+            width: 50%;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+//IKINCI SECTION
+
+
+.robot {
+    width: 100%;
+
+    .robot-all {
+        @include mini;
+        flex-direction: column;
+        padding: 100px 0;
+        gap: 50px;
+
+        .robot-1 {
+            width: 70%;
+            text-align: center;
+            @include flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h1 {
+                font-size: 35px;
+            }
+
+            p {
+                color: grey;
+                font-size: 14px;
+            }
+        }
+        .robot-2{
+            width: 100%;
+            @include flex;
+            justify-content: space-between;
+            .robot4{
+                width: 23%;
+                @include flex;
+                flex-direction: column;
+                text-align: center;
+                background-color: rgb(247, 248, 250);
+                cursor: pointer;
+                .robot-img{
+                    background-color: rgb(188, 202, 215);
+                    width:100%;
+                    padding: 20px;
+                }
+                .robot-text{
+                    @include flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    padding: 20px;
+                    cursor: pointer;
+                    h4{
+                        font-size: 20px;
+                    }
+                    p{
+                        color: grey;
+                        font-size: 14px;
+                    }
+                    #btn2{
+                       width: 150px;
+                       background-color: white;
+                       padding: 13px;
+                       border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//UCUNCU SECTION
+.globall{
+    width: 100%;
+    .globall-all{
+        @include mini;
+        justify-content: space-between;
+        .globall-img{
+            width: 50%;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .globall-text{
+            width: 50%;
+            display:  flex;
+            flex-direction: column;
+            gap: 20px;
+            h2{
+                font-size: 40px;
+            }
+            #black{
+                color: black;
+                font-size: 16px;
+            }
+            p{
+                font-size: 14px;
+                color: grey;
+            }
+            #btn3{
+                width: 150px;
+                padding: 15px;
+                border: none;
+                background-color:$nav;
+                color: $white;
+                &:hover{
+                    background-color: white;
+                    color: $nav;
+                    border: 1px solid $nav;
+                }
+            }
+        }
+    }
+}
+
+//DORDUNCU SECTION
+
+.life{
+    width: 100%;
+    .life-all{
+        @include mini;
+        justify-content: space-between;
+        padding: 100px 0;
+        .life-text{
+            width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h2{
+            font-size: 35px;
+         
+        }
+        #blue{
+            color: $nav;
+            letter-spacing: 2px;
+            font-size: 11px;
+        }
+        p{
+            color: grey;
+            font-size: 14px;
+        }
+        #btn4{
+            width: 200px;
+            padding: 15px;
+            border: none;
+            background-color:$nav;
+            color: $white;
+            &:hover{
+                background-color: white;
+                color: $nav;
+                border: 1px solid $nav;
+            }
+
+        }
+        }
+        .life-img{
+            width: 50%;
+            img{
+                width: 70%;
+            }
+        }
+    }
+}
+
+//BESINCI SECTION
+
+.some {
+    width: 100%;
+    background-image: url("https://preview.colorlib.com/theme/robotics/img/feature-bg.jpg.webp");
+    background-size: cover;
+    background-position: center;
+
+    .some-all {
+        @include mini;
+        flex-direction: column;
+        gap: 50px;
+        padding: 100px 0;
+
+        .some-head {
+            color: $white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h2 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .some-div {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+
+            .div6 {
+                width: 31.1%;
+                background-color: white;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 30px;
+
+                .div-h5 {
+                    width: 100%;
+                    display: flex;
+                    gap: 10px;
+                    font-size: 25px;
+                }
+
+                p {
+                    color: grey;
+                }
+            }
+
+        }
+    }
+}
+
+//ALTINCI SECTION
+
+.IMG{
+    width: 100%;
+    .img-all{
+        @include mini;
+        justify-content: space-between;
+        padding: 100px 0;
+      
+    }
+}
+
+
+//MEDIA -990PX
+
+@media screen and (max-width:990px) {
+    nav {
+        width: 100%;
+
+        .container {
+            @include flex;
+
+            .navbar {
+                width: 80%;
+                flex-direction: column;
+                gap: 2px;
+
+                .logo {
+                    width: 190px;
+                }
+
+                .div-ul {
+                    width: 70%;
+                    padding: 0 20px;
+
+                    ul {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    //ILK SECTION
+
+    .improved{
+        width: 100%;
+        .container{
+            .impro{
+                width: 80%;
+                .impro-1{
+                   // padding: 0 10px;
+                    line-height: 40px;
+                    h1{
+                        font-size: 35px;
+                    
+                    }
+                }
+                .impro-2{
+                   img{
+                    width: 100%;
+                   }
+                }
+            }
+        }
+    }
+
+    //IKINCI SECTION
+
+    .robot{
+        width: 100%;
+        .container{
+            .robot-all{
+                width: 100%;
+                .robot-2{
+                    width: 70%;
+                    flex-wrap: wrap;
+                   
+                    .robot4{
+                        width: 48%;
+                    }
+                }
+            }
+        }
+    }
+
+
+    //UCUNCU SECTION
+
+    .globall{
+        width: 100%;
+        .globall-all{
+            width: 100%;
+            flex-direction: column;
+            .globall-img{
+                width: 100%;
+            }
+            .globall-text{
+                width: 100%;
+                padding: 0 20px;
+                h2{
+                    font-size: 35px;
+                }
+            }
+        }
+     }
+
+     //DORDUNCU SECTION
+
+     .life{
+        width: 100%;
+        .container{
+            .life-all{
+                width: 100%;
+                flex-direction: column;
+                .life-text{
+                    width: 70%;
+                }
+                .life-img{
+                    width: 70%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    //BESINCI SECTION
+    .some {
+        width: 100%;
+
+        .container {
+            .some-all {
+                width: 100%;
+
+                .some-div {
+                    width: 80%;
+
+                    .some-head {
+                        width: 30%;
+                    }
+
+                    .div6 {
+                        width: 47%;
+                    }
+
+                }
+            }
+        }
+    }
+
+    //ALTINCI ::selection
+    .IMG{
+        width: 100%;
+        .container{
+            .img-all{
+                width: 80%;
+                .img5{
+                    img{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+//MEDIA-960PX NAVBAR
+
+@media screen and (max-width:960px) {
+    nav {
+        width: 100%;
+
+        .container {
+            @include flex;
+            padding: 0;
+
+            .navbar {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .logo {
+                    width: 190px;
+                    margin-left: 100px;
+                }
+
+                .div-ul {
+                    width: 30%;
+                    justify-content: end;
+                    ul {
+                        display: none;
+                    }
+
+                    i {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+
+    //IKINCI SECTION
+
+//DORDUNCU SECTION
+
+.life{
+    width: 100%;
+    .container{
+        .life-all{
+            width: 100%;
+            flex-direction: column;
+            gap: 50px;
+            .life-text{
+                width: 70%;
+            }
+            .life-img{
+                width: 70%;
+            }
+        }
+    }
+}
+}
+
+//MEDIA 760PX
+
+
+@media screen and (max-width:760px) {
+    //ILK SECTION
+    
+    .improved{
+        width: 100%;
+        .container{
+            .impro{
+                width: 100%;
+                flex-direction: column;
+                gap: 30px;
+                padding: 50px 0;
+                .impro-1{
+                    padding: 0 28px ;
+                   width: 80%;
+                    //line-height: 40px;
+                    h1{
+                        font-size: 35px;
+                    
+                    }
+                }
+                .impro-2{
+                    width: 80%;
+                   img{
+                    width: 100%;
+                   }
+                }
+            }
+        }
+    }
+
+    //IKINCI SECTION
+
+    .robot{
+        width: 100%;
+        .container{
+            .robot-all{
+                width: 100%;
+                .robot-2{
+                    width: 70%;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                   
+                    .robot4{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    //BESINCI SECTION
+
+    .some {
+        width: 100%;
+
+        .container {
+            .some-all {
+                width: 100%;
+
+                .some-div {
+                    width: 80%;
+
+                    .div6 {
+                        width: 100%;
+                    }
+
+                }
+            }
+        }
+    }
+
+   //ALTINCI SECTION
+
+   .IMG{
+    width: 100%;
+    .container{
+        .img-all{
+            width: 80%;
+            .img5{
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+}
+
+//MEDIA 576PX
+
+
+@media screen and (max-width:576px) {
+    nav {
+        width: 100%;
+
+        .container {
+            @include flex;
+            padding: 0;
+
+            .navbar {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .logo {
+                    width: 190px;
+                    margin-left: 20px;
+                }
+
+                .div-ul {
+                    width: 30%;
+                    justify-content: end;
+                    ul {
+                        display: none;
+                    }
+
+                    i {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+
+
+    //ILK SECTION
+
+    .improved{
+        width: 100%;
+        .container{
+            padding: 0 20px;
+            .impro{
+                width: 100%;
+                flex-direction: column;
+                gap: 30px;
+                .impro-1{
+                    padding: 0;
+                   width: 100%;
+                    //line-height: 40px;
+                    h1{
+                        font-size: 35px;
+                    
+                    }
+                }
+                .impro-2{
+                    width: 100%;
+                   img{
+                    width: 100%;
+                   }
+                }
+            }
+        }
+    }
+
+    //IKINCI SECTION
+
+    .robot{
+        width: 100%;
+        .container{
+            padding:  0 20px;
+            .robot-all{
+                width: 100%;
+                .robot-1{
+                    width: 100%;
+                }
+                .robot-2{
+                    width: 100%;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                   
+                    .robot4{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    //DORDUNCU SECTIOON
+
+    .life{
+        width: 100%;
+        .container{
+            padding: 0;
+            .life-all{
+                width: 100%;
+                flex-direction: column;
+                gap: 50px;
+                .life-text{
+                    width: 95%;
+                }
+                .life-img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    //BESINCI SECTION
+    .some {
+        width: 100%;
+
+        .container {
+            padding: 0 20px;
+            .some-all {
+                width: 100%;
+                .some-head {
+                    width: 100%;
+                    h2{
+                        font-size: 35px;
+                    }
+                }
+                .some-div {
+                    width: 100%;
+
+                    .div6 {
+                        width: 100%;
+                    }
+
+                }
+            }
+        }
+    }
+
+    //ALTINCI ::selection
+    .IMG{
+        width: 100%;
+        .container{
+            padding: 0 20px;
+            .img-all{
+                width: 100%;
+                .img5{
+                    img{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}

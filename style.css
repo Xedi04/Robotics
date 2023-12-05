@@ -1,0 +1,682 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1250px;
+  width: 100%;
+  margin: auto;
+  padding: 0 32px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  width: 100%;
+  background-color: #8a90ff;
+  position: fixed;
+  z-index: 1000;
+}
+nav .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  color: white;
+}
+nav .navbar .logo img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+nav .navbar .div-ul {
+  width: 42%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .navbar .div-ul ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .navbar .div-ul ul li {
+  font-size: 11px;
+  font-weight: 300;
+}
+nav .navbar .div-ul i {
+  font-size: 30px;
+  display: none;
+}
+
+.improved {
+  width: 100%;
+  background-image: url("https://preview.colorlib.com/theme/robotics/img/banner-bg.jpg.webp");
+  background-size: cover;
+  background-position: center;
+}
+.improved .impro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+.improved .impro .impro-1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  line-height: 70px;
+}
+.improved .impro .impro-1 h1 {
+  font-size: 60px;
+  font-weight: 400;
+}
+.improved .impro .impro-1 #btn1 {
+  width: 150px;
+  background-color: white;
+  padding: 14px;
+  border: none;
+}
+.improved .impro .impro-2 {
+  width: 50%;
+}
+.improved .impro .impro-2 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.robot {
+  width: 100%;
+}
+.robot .robot-all {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 100px 0;
+  gap: 50px;
+}
+.robot .robot-all .robot-1 {
+  width: 70%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.robot .robot-all .robot-1 h1 {
+  font-size: 35px;
+}
+.robot .robot-all .robot-1 p {
+  color: grey;
+  font-size: 14px;
+}
+.robot .robot-all .robot-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.robot .robot-all .robot-2 .robot4 {
+  width: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(247, 248, 250);
+  cursor: pointer;
+}
+.robot .robot-all .robot-2 .robot4 .robot-img {
+  background-color: rgb(188, 202, 215);
+  width: 100%;
+  padding: 20px;
+}
+.robot .robot-all .robot-2 .robot4 .robot-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  cursor: pointer;
+}
+.robot .robot-all .robot-2 .robot4 .robot-text h4 {
+  font-size: 20px;
+}
+.robot .robot-all .robot-2 .robot4 .robot-text p {
+  color: grey;
+  font-size: 14px;
+}
+.robot .robot-all .robot-2 .robot4 .robot-text #btn2 {
+  width: 150px;
+  background-color: white;
+  padding: 13px;
+  border: none;
+}
+
+.globall {
+  width: 100%;
+}
+.globall .globall-all {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  justify-content: space-between;
+}
+.globall .globall-all .globall-img {
+  width: 50%;
+}
+.globall .globall-all .globall-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.globall .globall-all .globall-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.globall .globall-all .globall-text h2 {
+  font-size: 40px;
+}
+.globall .globall-all .globall-text #black {
+  color: black;
+  font-size: 16px;
+}
+.globall .globall-all .globall-text p {
+  font-size: 14px;
+  color: grey;
+}
+.globall .globall-all .globall-text #btn3 {
+  width: 150px;
+  padding: 15px;
+  border: none;
+  background-color: #8a90ff;
+  color: white;
+}
+.globall .globall-all .globall-text #btn3:hover {
+  background-color: white;
+  color: #8a90ff;
+  border: 1px solid #8a90ff;
+}
+
+.life {
+  width: 100%;
+}
+.life .life-all {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+.life .life-all .life-text {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.life .life-all .life-text h2 {
+  font-size: 35px;
+}
+.life .life-all .life-text #blue {
+  color: #8a90ff;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+.life .life-all .life-text p {
+  color: grey;
+  font-size: 14px;
+}
+.life .life-all .life-text #btn4 {
+  width: 200px;
+  padding: 15px;
+  border: none;
+  background-color: #8a90ff;
+  color: white;
+}
+.life .life-all .life-text #btn4:hover {
+  background-color: white;
+  color: #8a90ff;
+  border: 1px solid #8a90ff;
+}
+.life .life-all .life-img {
+  width: 50%;
+}
+.life .life-all .life-img img {
+  width: 70%;
+}
+
+.some {
+  width: 100%;
+  background-image: url("https://preview.colorlib.com/theme/robotics/img/feature-bg.jpg.webp");
+  background-size: cover;
+  background-position: center;
+}
+.some .some-all {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 50px;
+  padding: 100px 0;
+}
+.some .some-all .some-head {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.some .some-all .some-head h2 {
+  font-size: 40px;
+}
+.some .some-all .some-head p {
+  font-size: 14px;
+}
+.some .some-all .some-div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.some .some-all .some-div .div6 {
+  width: 31.1%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+.some .some-all .some-div .div6 .div-h5 {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  font-size: 25px;
+}
+.some .some-all .some-div .div6 p {
+  color: grey;
+}
+
+.IMG {
+  width: 100%;
+}
+.IMG .img-all {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+@media screen and (max-width: 990px) {
+  nav {
+    width: 100%;
+  }
+  nav .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .container .navbar {
+    width: 80%;
+    flex-direction: column;
+    gap: 2px;
+  }
+  nav .container .navbar .logo {
+    width: 190px;
+  }
+  nav .container .navbar .div-ul {
+    width: 70%;
+    padding: 0 20px;
+  }
+  nav .container .navbar .div-ul ul {
+    width: 100%;
+  }
+  .improved {
+    width: 100%;
+  }
+  .improved .container .impro {
+    width: 80%;
+  }
+  .improved .container .impro .impro-1 {
+    line-height: 40px;
+  }
+  .improved .container .impro .impro-1 h1 {
+    font-size: 35px;
+  }
+  .improved .container .impro .impro-2 img {
+    width: 100%;
+  }
+  .robot {
+    width: 100%;
+  }
+  .robot .container .robot-all {
+    width: 100%;
+  }
+  .robot .container .robot-all .robot-2 {
+    width: 70%;
+    flex-wrap: wrap;
+  }
+  .robot .container .robot-all .robot-2 .robot4 {
+    width: 48%;
+  }
+  .globall {
+    width: 100%;
+  }
+  .globall .globall-all {
+    width: 100%;
+    flex-direction: column;
+  }
+  .globall .globall-all .globall-img {
+    width: 100%;
+  }
+  .globall .globall-all .globall-text {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .globall .globall-all .globall-text h2 {
+    font-size: 35px;
+  }
+  .life {
+    width: 100%;
+  }
+  .life .container .life-all {
+    width: 100%;
+    flex-direction: column;
+  }
+  .life .container .life-all .life-text {
+    width: 70%;
+  }
+  .life .container .life-all .life-img {
+    width: 70%;
+  }
+  .life .container .life-all .life-img img {
+    width: 100%;
+  }
+  .some {
+    width: 100%;
+  }
+  .some .container .some-all {
+    width: 100%;
+  }
+  .some .container .some-all .some-div {
+    width: 80%;
+  }
+  .some .container .some-all .some-div .some-head {
+    width: 30%;
+  }
+  .some .container .some-all .some-div .div6 {
+    width: 47%;
+  }
+  .IMG {
+    width: 100%;
+  }
+  .IMG .container .img-all {
+    width: 80%;
+  }
+  .IMG .container .img-all .img5 img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 960px) {
+  nav {
+    width: 100%;
+  }
+  nav .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  nav .container .navbar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav .container .navbar .logo {
+    width: 190px;
+    margin-left: 100px;
+  }
+  nav .container .navbar .div-ul {
+    width: 30%;
+    justify-content: end;
+  }
+  nav .container .navbar .div-ul ul {
+    display: none;
+  }
+  nav .container .navbar .div-ul i {
+    display: flex;
+  }
+  .life {
+    width: 100%;
+  }
+  .life .container .life-all {
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .life .container .life-all .life-text {
+    width: 70%;
+  }
+  .life .container .life-all .life-img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .improved {
+    width: 100%;
+  }
+  .improved .container .impro {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0;
+  }
+  .improved .container .impro .impro-1 {
+    padding: 0 28px;
+    width: 80%;
+  }
+  .improved .container .impro .impro-1 h1 {
+    font-size: 35px;
+  }
+  .improved .container .impro .impro-2 {
+    width: 80%;
+  }
+  .improved .container .impro .impro-2 img {
+    width: 100%;
+  }
+  .robot {
+    width: 100%;
+  }
+  .robot .container .robot-all {
+    width: 100%;
+  }
+  .robot .container .robot-all .robot-2 {
+    width: 70%;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .robot .container .robot-all .robot-2 .robot4 {
+    width: 100%;
+  }
+  .some {
+    width: 100%;
+  }
+  .some .container .some-all {
+    width: 100%;
+  }
+  .some .container .some-all .some-div {
+    width: 80%;
+  }
+  .some .container .some-all .some-div .div6 {
+    width: 100%;
+  }
+  .IMG {
+    width: 100%;
+  }
+  .IMG .container .img-all {
+    width: 80%;
+  }
+  .IMG .container .img-all .img5 img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 576px) {
+  nav {
+    width: 100%;
+  }
+  nav .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  nav .container .navbar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav .container .navbar .logo {
+    width: 190px;
+    margin-left: 20px;
+  }
+  nav .container .navbar .div-ul {
+    width: 30%;
+    justify-content: end;
+  }
+  nav .container .navbar .div-ul ul {
+    display: none;
+  }
+  nav .container .navbar .div-ul i {
+    display: flex;
+  }
+  .improved {
+    width: 100%;
+  }
+  .improved .container {
+    padding: 0 20px;
+  }
+  .improved .container .impro {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .improved .container .impro .impro-1 {
+    padding: 0;
+    width: 100%;
+  }
+  .improved .container .impro .impro-1 h1 {
+    font-size: 35px;
+  }
+  .improved .container .impro .impro-2 {
+    width: 100%;
+  }
+  .improved .container .impro .impro-2 img {
+    width: 100%;
+  }
+  .robot {
+    width: 100%;
+  }
+  .robot .container {
+    padding: 0 20px;
+  }
+  .robot .container .robot-all {
+    width: 100%;
+  }
+  .robot .container .robot-all .robot-1 {
+    width: 100%;
+  }
+  .robot .container .robot-all .robot-2 {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .robot .container .robot-all .robot-2 .robot4 {
+    width: 100%;
+  }
+  .life {
+    width: 100%;
+  }
+  .life .container {
+    padding: 0;
+  }
+  .life .container .life-all {
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .life .container .life-all .life-text {
+    width: 95%;
+  }
+  .life .container .life-all .life-img {
+    width: 100%;
+  }
+  .some {
+    width: 100%;
+  }
+  .some .container {
+    padding: 0 20px;
+  }
+  .some .container .some-all {
+    width: 100%;
+  }
+  .some .container .some-all .some-head {
+    width: 100%;
+  }
+  .some .container .some-all .some-head h2 {
+    font-size: 35px;
+  }
+  .some .container .some-all .some-div {
+    width: 100%;
+  }
+  .some .container .some-all .some-div .div6 {
+    width: 100%;
+  }
+  .IMG {
+    width: 100%;
+  }
+  .IMG .container {
+    padding: 0 20px;
+  }
+  .IMG .container .img-all {
+    width: 100%;
+  }
+  .IMG .container .img-all .img5 img {
+    width: 80%;
+  }
+}/*# sourceMappingURL=style.css.map */
