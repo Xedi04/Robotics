@@ -19,9 +19,9 @@ body {
 
 }
 
-nav {
+.nav {
     width: 100%;
-    background-color: $nav;
+    //background-color: $nav;
     position: fixed;
     z-index: 1000;
 
@@ -75,35 +75,41 @@ nav {
 //ILK SECTION
 
 
-.improved{
+.improved {
     width: 100%;
     background-image: url("https://preview.colorlib.com/theme/robotics/img/banner-bg.jpg.webp");
     background-size: cover;
     background-position: center;
-    .impro{
+
+    .impro {
         @include mini;
         padding: 100px 0;
-        .impro-1{
+
+        .impro-1 {
             width: 50%;
-            display:  flex;
+            display: flex;
             flex-direction: column;
             color: $white;
-           // padding: 25px;
+            // padding: 25px;
             line-height: 70px;
-            h1{
+
+            h1 {
                 font-size: 60px;
                 font-weight: 400;
             }
-            #btn1{
+
+            #btn1 {
                 width: 150px;
                 background-color: white;
                 padding: 14px;
                 border: none;
             }
         }
-        .impro-2{
+
+        .impro-2 {
             width: 50%;
-            img{
+
+            img {
                 width: 100%;
                 object-fit: cover;
             }
@@ -140,41 +146,48 @@ nav {
                 font-size: 14px;
             }
         }
-        .robot-2{
+
+        .robot-2 {
             width: 100%;
             @include flex;
             justify-content: space-between;
-            .robot4{
+
+            .robot4 {
                 width: 23%;
                 @include flex;
                 flex-direction: column;
                 text-align: center;
                 background-color: rgb(247, 248, 250);
                 cursor: pointer;
-                .robot-img{
+
+                .robot-img {
                     background-color: rgb(188, 202, 215);
-                    width:100%;
+                    width: 100%;
                     padding: 20px;
                 }
-                .robot-text{
+
+                .robot-text {
                     @include flex;
                     flex-direction: column;
                     gap: 20px;
                     padding: 20px;
                     cursor: pointer;
-                    h4{
+
+                    h4 {
                         font-size: 20px;
                     }
-                    p{
+
+                    p {
                         color: grey;
                         font-size: 14px;
                     }
-                    #btn2{
-                       width: 150px;
-                       background-color: white;
-                       padding: 13px;
-                       border: none;
-                       cursor: pointer;
+
+                    #btn2 {
+                        width: 150px;
+                        background-color: white;
+                        padding: 13px;
+                        border: none;
+                        cursor: pointer;
                     }
                 }
             }
@@ -184,41 +197,50 @@ nav {
 
 
 //UCUNCU SECTION
-.globall{
+.globall {
     width: 100%;
-    .globall-all{
+
+    .globall-all {
         @include mini;
         justify-content: space-between;
-        .globall-img{
+
+        .globall-img {
             width: 50%;
-            img{
+
+            img {
                 width: 100%;
                 object-fit: cover;
             }
         }
-        .globall-text{
+
+        .globall-text {
             width: 50%;
-            display:  flex;
+            display: flex;
             flex-direction: column;
             gap: 20px;
-            h2{
+
+            h2 {
                 font-size: 40px;
             }
-            #black{
+
+            #black {
                 color: black;
                 font-size: 16px;
             }
-            p{
+
+            p {
                 font-size: 14px;
                 color: grey;
             }
-            #btn3{
+
+            #btn3 {
                 width: 150px;
                 padding: 15px;
                 border: none;
-                background-color:$nav;
+                background-color: $nav;
                 color: $white;
-                &:hover{
+
+                &:hover {
                     background-color: white;
                     color: $nav;
                     border: 1px solid $nav;
@@ -230,47 +252,56 @@ nav {
 
 //DORDUNCU SECTION
 
-.life{
+.life {
     width: 100%;
-    .life-all{
+
+    .life-all {
         @include mini;
         justify-content: space-between;
         padding: 100px 0;
-        .life-text{
+
+        .life-text {
             width: 45%;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        h2{
-            font-size: 35px;
-         
-        }
-        #blue{
-            color: $nav;
-            letter-spacing: 2px;
-            font-size: 11px;
-        }
-        p{
-            color: grey;
-            font-size: 14px;
-        }
-        #btn4{
-            width: 200px;
-            padding: 15px;
-            border: none;
-            background-color:$nav;
-            color: $white;
-            &:hover{
-                background-color: white;
-                color: $nav;
-                border: 1px solid $nav;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h2 {
+                font-size: 35px;
+
             }
 
+            #blue {
+                color: $nav;
+                letter-spacing: 2px;
+                font-size: 11px;
+            }
+
+            p {
+                color: grey;
+                font-size: 14px;
+            }
+
+            #btn4 {
+                width: 200px;
+                padding: 15px;
+                border: none;
+                background-color: $nav;
+                color: $white;
+
+                &:hover {
+                    background-color: white;
+                    color: $nav;
+                    border: 1px solid $nav;
+                }
+
+            }
         }
-        }
-        .life-img{
+
+        .life-img {
             width: 50%;
-            img{
+
+            img {
                 width: 70%;
             }
         }
@@ -341,21 +372,259 @@ nav {
 
 //ALTINCI SECTION
 
-.IMG{
+.IMG {
     width: 100%;
-    .img-all{
+
+    .img-all {
         @include mini;
         justify-content: space-between;
         padding: 100px 0;
-      
+
+        img {
+            filter: grayscale(100%);
+            transition: filter 0.5s ease;
+
+            &:hover {
+                filter: grayscale(0);
+            }
+        }
     }
 }
 
 
+//YEDDINCI SECTION
+
+
+.blog {
+    width: 100%;
+
+    .blog-all {
+        @include flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 100px 0;
+
+        .blog-head {
+            // width: 50%;
+            text-align: center;
+
+            h2 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 14px;
+                color: grey;
+                margin-top: 20px;
+            }
+        }
+
+        .blog-img {
+            width: 100%;
+            @include flex;
+            justify-content: space-between;
+
+            .img2 {
+                width: 48%;
+                display: flex;
+                flex-direction: column;
+
+                .b-img {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .img-text {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .but {
+                        display: flex;
+                        gap: 20px;
+
+                        #btn6,
+                        #btn7 {
+                            width: 100px;
+                            padding: 10px;
+                            background-color: $nav;
+                            border: 0;
+                            color: $white;
+                        }
+                    }
+
+                    h4 {
+                        font-size: 20px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        color: grey;
+                    }
+
+                    #black {
+                        font-size: 16px;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//FOOTER
+
+
+footer {
+    width: 100%;
+    background-image: url("https://preview.colorlib.com/theme/robotics/img/footer-bg.jpg.webp");
+    background-size: cover;
+    background-position: center;
+
+    .footer-all {
+        @include mini;
+        flex-direction: column;
+        padding: 100px 0;
+        gap: 100px;
+
+        .end-1 {
+            width: 100%;
+            @include flex;
+            justify-content: space-between;
+
+            .end1 {
+                width: 23%;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                h5 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 16px;
+                    transition: all .5s ease;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $nav;
+                    }
+                }
+            }
+
+            .end2 {
+                width: 46%;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                margin-top: -55px;
+
+                h5 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                .end-but {
+                    width: 100%;
+                    display: flex;
+                    gap: 30px;
+
+                    input {
+                        width: 350px;
+                        padding: 10px;
+                        border-radius: 30px;
+                    }
+
+                    #btnson {
+                        width: 150px;
+                        border-radius: 30px;
+                        border: none;
+                        background-color: $nav;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+            .end-img {
+                width: 23%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                h5 {
+                    font-size: 20px;
+                    color: white;
+                }
+
+                .son-img {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                 .son-img1{
+                    width: 100%;
+                    @include flex;
+                    justify-content: space-between;
+                 }
+                }
+            }
+        }
+
+        .end-2 {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .son1 {
+                color: white;
+                display: flex;
+                gap: 3px;
+
+                i {
+                    color: $nav;
+                }
+
+                #son {
+                    color: $nav;
+                }
+            }
+
+            ul {
+                list-style: none;
+                color: white;
+                @include flex;
+                gap: 20px;
+                li{
+                    i{
+                        background-color: black;
+                        padding: 10px;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: $nav;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 //MEDIA -990PX
 
 @media screen and (max-width:990px) {
-    nav {
+    .nav {
         width: 100%;
 
         .container {
@@ -384,23 +653,27 @@ nav {
 
     //ILK SECTION
 
-    .improved{
+    .improved {
         width: 100%;
-        .container{
-            .impro{
+
+        .container {
+            .impro {
                 width: 80%;
-                .impro-1{
-                   // padding: 0 10px;
+
+                .impro-1 {
+                    // padding: 0 10px;
                     line-height: 40px;
-                    h1{
+
+                    h1 {
                         font-size: 35px;
-                    
+
                     }
                 }
-                .impro-2{
-                   img{
-                    width: 100%;
-                   }
+
+                .impro-2 {
+                    img {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -408,16 +681,18 @@ nav {
 
     //IKINCI SECTION
 
-    .robot{
+    .robot {
         width: 100%;
-        .container{
-            .robot-all{
+
+        .container {
+            .robot-all {
                 width: 100%;
-                .robot-2{
-                    width: 70%;
+
+                .robot-2 {
+                    width: 80%;
                     flex-wrap: wrap;
-                   
-                    .robot4{
+
+                    .robot4 {
                         width: 48%;
                     }
                 }
@@ -428,38 +703,48 @@ nav {
 
     //UCUNCU SECTION
 
-    .globall{
+    .globall {
         width: 100%;
-        .globall-all{
+
+        .globall-all {
             width: 100%;
             flex-direction: column;
-            .globall-img{
+            gap: 50px;
+
+            .globall-img {
                 width: 100%;
             }
-            .globall-text{
+
+            .globall-text {
                 width: 100%;
                 padding: 0 20px;
-                h2{
+
+                h2 {
                     font-size: 35px;
                 }
             }
         }
-     }
+    }
 
-     //DORDUNCU SECTION
+    //DORDUNCU SECTION
 
-     .life{
+    .life {
         width: 100%;
-        .container{
-            .life-all{
+
+        .container {
+            .life-all {
                 width: 100%;
                 flex-direction: column;
-                .life-text{
-                    width: 70%;
+                gap: 50px;
+
+                .life-text {
+                    width: 80%;
                 }
-                .life-img{
-                    width: 70%;
-                    img{
+
+                .life-img {
+                    width: 80%;
+
+                    img {
                         width: 100%;
                     }
                 }
@@ -492,13 +777,15 @@ nav {
     }
 
     //ALTINCI ::selection
-    .IMG{
+    .IMG {
         width: 100%;
-        .container{
-            .img-all{
+
+        .container {
+            .img-all {
                 width: 80%;
-                .img5{
-                    img{
+
+                .img5 {
+                    img {
                         width: 90%;
                     }
                 }
@@ -506,12 +793,77 @@ nav {
         }
     }
 
+    //YEDDINCI SECTION
+
+    .blog {
+        width: 100%;
+
+        .container {
+            .blog-all {
+                width: 100%;
+
+                .blog-head {
+                    h2 {
+                        font-size: 35px;
+                    }
+                }
+
+                .blog-img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    //FOOTER
+
+    footer{
+        width: 100%;
+        .container{
+            .footer-all{
+                width: 80%;
+                .end-1{
+                    flex-direction: column;
+                    gap: 100px;
+                    .end1{
+                        width: 100%;
+                    }
+                    .end2{
+                        width: 100%;
+                        
+                            margin-top: 0;
+                            .end-but{
+                                flex-direction: column;
+                                input{
+                                    width: 100%;
+                                }
+                                #btnson{
+                                    padding: 10px;
+                                }
+                            }
+                        
+                    }
+                    .end-img{
+                   width: 100%;
+                    }
+                }
+                .end-2{
+                    width: 100%;
+                    flex-direction: column;
+                    gap: 30px;
+                    ul{
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
+    }
 }
 
 //MEDIA-960PX NAVBAR
 
 @media screen and (max-width:960px) {
-    nav {
+    .nav {
         width: 100%;
 
         .container {
@@ -531,6 +883,7 @@ nav {
                 .div-ul {
                     width: 30%;
                     justify-content: end;
+
                     ul {
                         display: none;
                     }
@@ -545,24 +898,7 @@ nav {
 
     //IKINCI SECTION
 
-//DORDUNCU SECTION
-
-.life{
-    width: 100%;
-    .container{
-        .life-all{
-            width: 100%;
-            flex-direction: column;
-            gap: 50px;
-            .life-text{
-                width: 70%;
-            }
-            .life-img{
-                width: 70%;
-            }
-        }
-    }
-}
+   
 }
 
 //MEDIA 760PX
@@ -570,29 +906,34 @@ nav {
 
 @media screen and (max-width:760px) {
     //ILK SECTION
-    
-    .improved{
+
+    .improved {
         width: 100%;
-        .container{
-            .impro{
+
+        .container {
+            .impro {
                 width: 100%;
                 flex-direction: column;
                 gap: 30px;
                 padding: 50px 0;
-                .impro-1{
-                    padding: 0 28px ;
-                   width: 80%;
+
+                .impro-1 {
+                    padding: 0 28px;
+                    width: 80%;
+
                     //line-height: 40px;
-                    h1{
+                    h1 {
                         font-size: 35px;
-                    
+
                     }
                 }
-                .impro-2{
+
+                .impro-2 {
                     width: 80%;
-                   img{
-                    width: 100%;
-                   }
+
+                    img {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -600,17 +941,19 @@ nav {
 
     //IKINCI SECTION
 
-    .robot{
+    .robot {
         width: 100%;
-        .container{
-            .robot-all{
+
+        .container {
+            .robot-all {
                 width: 100%;
-                .robot-2{
+
+                .robot-2 {
                     width: 70%;
                     flex-wrap: wrap;
                     gap: 30px;
-                   
-                    .robot4{
+
+                    .robot4 {
                         width: 100%;
                     }
                 }
@@ -639,21 +982,43 @@ nav {
         }
     }
 
-   //ALTINCI SECTION
+    //ALTINCI SECTION
 
-   .IMG{
-    width: 100%;
-    .container{
-        .img-all{
-            width: 80%;
-            .img5{
-                img{
-                    width: 80%;
+    .IMG {
+        width: 100%;
+
+        .container {
+            .img-all {
+                width: 80%;
+
+                .img5 {
+                    img {
+                        width: 80%;
+                    }
                 }
             }
         }
     }
-}
+
+    //YEDDINCI SECTION
+    .blog {
+        width: 100%;
+
+        .container {
+            .blog-all {
+                width: 100%;
+
+                .blog-img {
+                    flex-direction: column;
+                    gap: 30px;
+
+                    .img2 {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
 
 }
 
@@ -661,7 +1026,7 @@ nav {
 
 
 @media screen and (max-width:576px) {
-    nav {
+   .nav {
         width: 100%;
 
         .container {
@@ -681,6 +1046,7 @@ nav {
                 .div-ul {
                     width: 30%;
                     justify-content: end;
+
                     ul {
                         display: none;
                     }
@@ -696,28 +1062,34 @@ nav {
 
     //ILK SECTION
 
-    .improved{
+    .improved {
         width: 100%;
-        .container{
+
+        .container {
             padding: 0 20px;
-            .impro{
+
+            .impro {
                 width: 100%;
                 flex-direction: column;
                 gap: 30px;
-                .impro-1{
+
+                .impro-1 {
                     padding: 0;
-                   width: 100%;
+                    width: 100%;
+
                     //line-height: 40px;
-                    h1{
+                    h1 {
                         font-size: 35px;
-                    
+
                     }
                 }
-                .impro-2{
+
+                .impro-2 {
                     width: 100%;
-                   img{
-                    width: 100%;
-                   }
+
+                    img {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -725,21 +1097,25 @@ nav {
 
     //IKINCI SECTION
 
-    .robot{
+    .robot {
         width: 100%;
-        .container{
-            padding:  0 20px;
-            .robot-all{
+
+        .container {
+            padding: 0 20px;
+
+            .robot-all {
                 width: 100%;
-                .robot-1{
+
+                .robot-1 {
                     width: 100%;
                 }
-                .robot-2{
+
+                .robot-2 {
                     width: 100%;
                     flex-wrap: wrap;
                     gap: 30px;
-                   
-                    .robot4{
+
+                    .robot4 {
                         width: 100%;
                     }
                 }
@@ -749,18 +1125,22 @@ nav {
 
     //DORDUNCU SECTIOON
 
-    .life{
+    .life {
         width: 100%;
-        .container{
+
+        .container {
             padding: 0;
-            .life-all{
+
+            .life-all {
                 width: 100%;
                 flex-direction: column;
                 gap: 50px;
-                .life-text{
+
+                .life-text {
                     width: 95%;
                 }
-                .life-img{
+
+                .life-img {
                     width: 100%;
                 }
             }
@@ -773,14 +1153,18 @@ nav {
 
         .container {
             padding: 0 20px;
+
             .some-all {
                 width: 100%;
+
                 .some-head {
                     width: 100%;
-                    h2{
+
+                    h2 {
                         font-size: 35px;
                     }
                 }
+
                 .some-div {
                     width: 100%;
 
@@ -794,15 +1178,83 @@ nav {
     }
 
     //ALTINCI ::selection
-    .IMG{
+    .IMG {
+        width: 100%;
+
+        .container {
+            padding: 0 20px;
+
+            .img-all {
+                width: 100%;
+
+                .img5 {
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+
+    //YEDDINCI SECTION
+
+    .blog{
         width: 100%;
         .container{
             padding: 0 20px;
-            .img-all{
+            .blog-all{
                 width: 100%;
-                .img5{
-                    img{
-                        width: 80%;
+                .blog-img{
+                    width: 100%;
+                    flex-direction: column;
+                    gap: 30px;
+                    .img2{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    //FOOTER
+
+    footer{
+        width: 100%;
+        .container{
+            padding: 0 20px;
+            .footer-all{
+                width: 100%;
+                .end-1{
+                    flex-direction: column;
+                    gap: 100px;
+                    .end1{
+                        width: 100%;
+                    }
+                    .end2{
+                        width: 100%;
+                        
+                            margin-top: 0;
+                            .end-but{
+                                flex-direction: column;
+                                input{
+                                    width: 100%;
+                                }
+                                #btnson{
+                                    padding: 10px;
+                                }
+                            }
+                        
+                    }
+                    .end-img{
+                   width: 100%;
+                    }
+                }
+                .end-2{
+                    width: 100%;
+                    flex-direction: column;
+                    gap: 30px;
+                    ul{
+                        justify-content: flex-start;
                     }
                 }
             }

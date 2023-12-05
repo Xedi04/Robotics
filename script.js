@@ -21,11 +21,17 @@ data.forEach(element => {
 })
 
 
-let Btn=document.querySelector("robot4");
-let Button=document.querySelector("#btn2");
-
-Btn.addEventListener("mouseover", ()=>{
-Button.style.backgroundColor="violet"
-})
 
 
+let navbar=document.querySelector(".nav");
+
+function nvbr (){
+if(window.scrollY>50){
+  navbar.style.backgroundColor="#8a90ff"
+  navbar.style.transition = "all 1s ease"
+}else{
+  navbar.style.backgroundColor=""
+}
+}
+
+window.addEventListener("scroll", nvbr);
