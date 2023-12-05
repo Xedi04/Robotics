@@ -171,6 +171,7 @@ nav .navbar .div-ul i {
   background-color: white;
   padding: 13px;
   border: none;
+  cursor: pointer;
 }
 
 .globall {
