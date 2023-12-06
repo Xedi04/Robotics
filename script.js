@@ -39,3 +39,44 @@ if(window.scrollY>50){
 }
 
 window.addEventListener("scroll", nvbr);
+
+
+let menuicon=document.querySelector("#menu-icon");
+let body=document.querySelector("body");
+let click=document.querySelector(".click");
+let menu=document.querySelector(".menu");
+let close1=document.querySelector("#close");
+click.style.display="none"
+
+menuicon.addEventListener("click", ()=>{
+  click.style.display="flex";
+})
+close1.addEventListener("click", () => {
+  click.style.display = "none"
+})
+click.addEventListener("click", (e)=>{
+  if (e.target == click) {
+    click.style.display = "none"
+}
+})
+
+
+
+ let top1=document.querySelector("#top");
+
+top1.addEventListener("click", ()=>{
+  window.scrollTo({
+    top:0,
+    left:0,
+    behavior:"smooth"
+  })
+})
+
+function Topp(){
+  if(window.scrollY>650){
+    top1.style.display="block"
+  }else{
+    top1.style.display="none"
+  }
+}
+window.addEventListener("scroll", Topp);

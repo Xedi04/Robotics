@@ -15,6 +15,58 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.click {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2000;
+  display: flex;
+  justify-content: space-between;
+}
+.click .menu {
+  width: 250px;
+  background-color: black;
+}
+.click .menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  list-style: none;
+  padding: 20px;
+  cursor: pointer;
+}
+.click .menu ul li {
+  color: white;
+  font-size: 13px;
+}
+.click i {
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+}
+
+#top {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #8a90ff;
+  border: none;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#top i {
+  font-size: 40px;
+  color: white;
+}
+
 .elave {
   width: 100%;
 }
@@ -26,6 +78,22 @@ body {
   margin: auto;
   justify-content: space-between;
   padding: 100px 0;
+}
+.elave .all1 .detail-robot {
+  width: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  background-color: rgb(209, 232, 243);
+  padding: 20px;
+}
+.elave .all1 .detail-robot .r-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .add {
@@ -55,7 +123,7 @@ body {
 .add .add-all .add-box input {
   padding: 10px;
 }
-.add .add-all .add-box .submit {
+.add .add-all .add-box #submit {
   padding: 10px;
   background-color: yellow;
   border: none;

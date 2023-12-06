@@ -19,12 +19,85 @@ body {
 
 }
 
+//MENU
+
+.click {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    z-index: 2000;
+    display: flex;
+    justify-content: space-between;
+
+    .menu {
+        width: 250px;
+        background-color: black;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            list-style: none;
+            padding: 20px;
+            cursor: pointer;
+
+            li {
+                color: white;
+                font-size: 13px;
+            }
+        }
+    }
+i{
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+}
+}
+
+#top{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: $nav;
+    border: none;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    i{
+        font-size: 40px;
+        color: white;
+    }
+}
+
+
 .elave {
     width: 100%;
 
     .all1 {
         @include mini;
         padding: 100px 0;
+        .detail-robot{
+            width: 23%;
+            @include flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+            background-color: rgb(209, 232, 243);
+            padding: 20px;
+            .r-text{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
     }
 }
 
@@ -57,7 +130,7 @@ body {
                 padding: 10px;
             }
 
-            .submit {
+            #submit {
                 padding: 10px;
                 background-color: yellow;
                 border: none;
@@ -236,12 +309,14 @@ nav {
                         padding: 13px;
                         border: none;
                         cursor: pointer;
-                        a{
+
+                        a {
                             color: white;
                             text-decoration: none;
                         }
                     }
-                    #but1{
+
+                    #but1 {
                         width: 100px;
                         padding: 10px;
                         background-color: $nav;
