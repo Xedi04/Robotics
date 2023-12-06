@@ -6,8 +6,8 @@ fetch(`http://localhost:3000/robots/${id}`)
     .then(data => {
            console.log(data);
         divv.innerHTML += `
-        <div class="robot4">
-    <div class="robot-img">
+        <div class="robot4 ">
+    <div class="robot-img detail-robot">
     <img src="${data.image}">
   </div>
   <div class="robot-text">

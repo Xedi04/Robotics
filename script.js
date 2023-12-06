@@ -15,12 +15,16 @@ data.forEach(element => {
     <h4>${element.name}</h4>
     <p>${element.description}</p>
     <button id="btn2"><a href="./details.html?id=${element.id}">VIEW DETAILS</a></button>
+    <button id="but1" onclick ="deleteRobot(${element.id})">Delete<?button>>
   </div>
   </div>`
 });
 })
 
-
+function deleteRobot(id){
+  axios.delete(`http://localhost:3000/robots/${id}`)
+  window.location.reload();
+}
 
 
 let navbar=document.querySelector(".nav");

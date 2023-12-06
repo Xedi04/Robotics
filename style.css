@@ -15,12 +15,59 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.nav {
+.elave {
+  width: 100%;
+}
+.elave .all1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+.add {
+  width: 100%;
+}
+.add .add-all {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+.add .add-all .add-box {
+  width: 30%;
+  background-color: rgb(164, 190, 240);
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.add .add-all .add-box .choose {
+  padding: 10px;
+  background-color: yellow;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+}
+.add .add-all .add-box input {
+  padding: 10px;
+}
+.add .add-all .add-box .submit {
+  padding: 10px;
+  background-color: yellow;
+  border: none;
+  cursor: pointer;
+}
+
+nav {
   width: 100%;
   position: fixed;
   z-index: 1000;
 }
-.nav .navbar {
+nav .navbar {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -28,18 +75,18 @@ body {
   padding: 20px 0;
   color: white;
 }
-.nav .navbar .logo img {
+nav .navbar .logo img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.nav .navbar .div-ul {
+nav .navbar .div-ul {
   width: 42%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.nav .navbar .div-ul ul {
+nav .navbar .div-ul ul {
   width: 100%;
   list-style: none;
   display: flex;
@@ -47,11 +94,11 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.nav .navbar .div-ul ul li {
+nav .navbar .div-ul ul li {
   font-size: 11px;
   font-weight: 300;
 }
-.nav .navbar .div-ul i {
+nav .navbar .div-ul i {
   font-size: 30px;
   display: none;
 }
@@ -167,10 +214,21 @@ body {
 }
 .robot .robot-all .robot-2 .robot4 .robot-text #btn2 {
   width: 150px;
-  background-color: white;
+  background-color: #8a90ff;
   padding: 13px;
   border: none;
   cursor: pointer;
+}
+.robot .robot-all .robot-2 .robot4 .robot-text #btn2 a {
+  color: white;
+  text-decoration: none;
+}
+.robot .robot-all .robot-2 .robot4 .robot-text #but1 {
+  width: 100px;
+  padding: 10px;
+  background-color: #8a90ff;
+  color: white;
+  border: none;
 }
 
 .globall {

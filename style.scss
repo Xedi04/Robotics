@@ -19,7 +19,55 @@ body {
 
 }
 
-.nav {
+.elave {
+    width: 100%;
+
+    .all1 {
+        @include mini;
+        padding: 100px 0;
+    }
+}
+
+.add {
+    width: 100%;
+
+    .add-all {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0;
+
+        .add-box {
+            width: 30%;
+            background-color: rgb(164, 190, 240);
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+
+            .choose {
+                padding: 10px;
+                background-color: yellow;
+                width: 100px;
+                border: none;
+                cursor: pointer;
+            }
+
+            input {
+                padding: 10px;
+            }
+
+            .submit {
+                padding: 10px;
+                background-color: yellow;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+nav {
     width: 100%;
     //background-color: $nav;
     position: fixed;
@@ -184,10 +232,21 @@ body {
 
                     #btn2 {
                         width: 150px;
-                        background-color: white;
+                        background-color: $nav;
                         padding: 13px;
                         border: none;
                         cursor: pointer;
+                        a{
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                    #but1{
+                        width: 100px;
+                        padding: 10px;
+                        background-color: $nav;
+                        color: white;
+                        border: none;
                     }
                 }
             }
@@ -574,11 +633,12 @@ footer {
                     display: flex;
                     flex-direction: column;
                     gap: 15px;
-                 .son-img1{
-                    width: 100%;
-                    @include flex;
-                    justify-content: space-between;
-                 }
+
+                    .son-img1 {
+                        width: 100%;
+                        @include flex;
+                        justify-content: space-between;
+                    }
                 }
             }
         }
@@ -607,12 +667,14 @@ footer {
                 color: white;
                 @include flex;
                 gap: 20px;
-                li{
-                    i{
+
+                li {
+                    i {
                         background-color: black;
                         padding: 10px;
                         cursor: pointer;
-                        &:hover{
+
+                        &:hover {
                             background-color: $nav;
                         }
                     }
@@ -621,6 +683,7 @@ footer {
         }
     }
 }
+
 //MEDIA -990PX
 
 @media screen and (max-width:990px) {
@@ -817,41 +880,51 @@ footer {
 
     //FOOTER
 
-    footer{
+    footer {
         width: 100%;
-        .container{
-            .footer-all{
+
+        .container {
+            .footer-all {
                 width: 80%;
-                .end-1{
+
+                .end-1 {
                     flex-direction: column;
                     gap: 100px;
-                    .end1{
+
+                    .end1 {
                         width: 100%;
                     }
-                    .end2{
+
+                    .end2 {
                         width: 100%;
-                        
-                            margin-top: 0;
-                            .end-but{
-                                flex-direction: column;
-                                input{
-                                    width: 100%;
-                                }
-                                #btnson{
-                                    padding: 10px;
-                                }
+
+                        margin-top: 0;
+
+                        .end-but {
+                            flex-direction: column;
+
+                            input {
+                                width: 100%;
                             }
-                        
+
+                            #btnson {
+                                padding: 10px;
+                            }
+                        }
+
                     }
-                    .end-img{
-                   width: 100%;
+
+                    .end-img {
+                        width: 100%;
                     }
                 }
-                .end-2{
+
+                .end-2 {
                     width: 100%;
                     flex-direction: column;
                     gap: 30px;
-                    ul{
+
+                    ul {
                         justify-content: flex-start;
                     }
                 }
@@ -898,7 +971,7 @@ footer {
 
     //IKINCI SECTION
 
-   
+
 }
 
 //MEDIA 760PX
@@ -1026,7 +1099,7 @@ footer {
 
 
 @media screen and (max-width:576px) {
-   .nav {
+    .nav {
         width: 100%;
 
         .container {
@@ -1198,17 +1271,21 @@ footer {
 
     //YEDDINCI SECTION
 
-    .blog{
+    .blog {
         width: 100%;
-        .container{
+
+        .container {
             padding: 0 20px;
-            .blog-all{
+
+            .blog-all {
                 width: 100%;
-                .blog-img{
+
+                .blog-img {
                     width: 100%;
                     flex-direction: column;
                     gap: 30px;
-                    .img2{
+
+                    .img2 {
                         width: 100%;
                     }
                 }
@@ -1218,42 +1295,53 @@ footer {
 
     //FOOTER
 
-    footer{
+    footer {
         width: 100%;
-        .container{
+
+        .container {
             padding: 0 20px;
-            .footer-all{
+
+            .footer-all {
                 width: 100%;
-                .end-1{
+
+                .end-1 {
                     flex-direction: column;
                     gap: 100px;
-                    .end1{
+
+                    .end1 {
                         width: 100%;
                     }
-                    .end2{
+
+                    .end2 {
                         width: 100%;
-                        
-                            margin-top: 0;
-                            .end-but{
-                                flex-direction: column;
-                                input{
-                                    width: 100%;
-                                }
-                                #btnson{
-                                    padding: 10px;
-                                }
+
+                        margin-top: 0;
+
+                        .end-but {
+                            flex-direction: column;
+
+                            input {
+                                width: 100%;
                             }
-                        
+
+                            #btnson {
+                                padding: 10px;
+                            }
+                        }
+
                     }
-                    .end-img{
-                   width: 100%;
+
+                    .end-img {
+                        width: 100%;
                     }
                 }
-                .end-2{
+
+                .end-2 {
                     width: 100%;
                     flex-direction: column;
                     gap: 30px;
-                    ul{
+
+                    ul {
                         justify-content: flex-start;
                     }
                 }
