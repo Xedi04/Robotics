@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <section class="add">
         <div class="container">
             <div class="add-all">
-                <div class="add-box">
-                    <label for="">Image</label>
-                  <input type="file" id="image">Choose File
-                  <label for="">Name</label>
-                  <input id="name" type="text">
-                  <label for="">Category</label>
-                  <input id="category" type="text">
-                  <input type="submit" name="" id="submit"> Submit </div>
+                <div class="icon-x"> <i id="close" class="bi bi-x-lg icon"></i></div>
+                    <form action="" class="add-box">
+                        <label for="">Image</label>
+                        <input type="file" id="image">Choose File
+                        <label for="">Name</label>
+                        <input id="name" type="text">
+                        <label for="">Category</label>
+                        <input id="category" type="text">
+                        <input type="submit" name="" id="submit"> Submit
+                    </form>
             </div>
         </div>
     </section>
@@ -25,4 +29,5 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./add.js"></script>
 </body>
+
 </html>

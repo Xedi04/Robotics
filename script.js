@@ -1,11 +1,14 @@
 let alldiv=document.querySelector(".robot-2")
+let loadBtn=document.querySelector("#load")
+let page = 4
 
+showData()
 
-
+function showData() {
 fetch("http://localhost:3000/robots")
 .then(res=>res.json())
 .then(data=>{
-data.forEach(element => {
+data.slice(page-4,page).forEach(element => {
     alldiv.innerHTML+=`
     <div class="robot4">
     <div class="robot-img">
@@ -15,10 +18,17 @@ data.forEach(element => {
     <h4>${element.name}</h4>
     <p>${element.description}</p>
     <button id="btn2"><a href="./details.html?id=${element.id}">VIEW DETAILS</a></button>
-    <button id="but1" onclick ="deleteRobot(${element.id})">Delete<?button>>
+    <button id="but1" onclick ="deleteRobot(${element.id})">Delete<?button>
+    <button onclick="update-robot(${element.id})">Update<?button>
   </div>
   </div>`
 });
+})
+}
+
+loadBtn.addEventListener("click",()=>{
+  page+=4
+showData()
 })
 
 function deleteRobot(id){
@@ -26,6 +36,7 @@ function deleteRobot(id){
   window.location.reload();
 }
 
+//NAVBAR
 
 let navbar=document.querySelector(".nav");
 
@@ -40,7 +51,7 @@ if(window.scrollY>50){
 
 window.addEventListener("scroll", nvbr);
 
-
+//MENU
 let menuicon=document.querySelector("#menu-icon");
 let body=document.querySelector("body");
 let click=document.querySelector(".click");
@@ -80,3 +91,11 @@ function Topp(){
   }
 }
 window.addEventListener("scroll", Topp);
+
+
+
+// let updateall=document.querySelector(".update-all");
+// function name() {
+  
+// }
+

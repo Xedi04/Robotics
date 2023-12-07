@@ -19,6 +19,38 @@ body {
 
 }
 
+
+//UPDATE
+
+.update-all{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    z-index: 2000;
+   // @include flex;
+    .update-box{
+        width: 300px;
+        background-color: rgb(167, 206, 238);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+
+        input{
+            padding: 10px;
+        }
+        #submit{
+            background-color: $nav;
+            border: none;
+        }
+    }
+
+
+}
 //MENU
 
 .click {
@@ -250,6 +282,14 @@ nav {
         flex-direction: column;
         padding: 100px 0;
         gap: 50px;
+        
+        #load{
+            width: 100px;
+            padding: 10px 0;
+            background-color: $nav;
+            border: none;
+            cursor: pointer;
+        }
 
         .robot-1 {
             width: 70%;
@@ -272,9 +312,9 @@ nav {
             width: 100%;
             @include flex;
             justify-content: space-between;
-
+            flex-wrap: wrap;
             .robot4 {
-                width: 23%;
+                width: 25%;
                 @include flex;
                 flex-direction: column;
                 text-align: center;
@@ -283,8 +323,11 @@ nav {
 
                 .robot-img {
                     background-color: rgb(188, 202, 215);
-                    width: 100%;
+                    width: 70%;
                     padding: 20px;
+                    img{
+                        width: 100%
+                    }
                 }
 
                 .robot-text {
@@ -293,6 +336,15 @@ nav {
                     gap: 20px;
                     padding: 20px;
                     cursor: pointer;
+
+                    button{
+                        width: 100px;
+                        background-color: $nav;
+                        padding: 10px 0;
+                        border: none;
+                        color: white;
+                        
+                    }
 
                     h4 {
                         font-size: 20px;
@@ -316,7 +368,7 @@ nav {
                         }
                     }
 
-                    #but1 {
+                    #but1{
                         width: 100px;
                         padding: 10px;
                         background-color: $nav;
