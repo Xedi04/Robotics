@@ -102,10 +102,19 @@ i{
     right: 0;
     margin-right: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
+    &:hover{
+        border: 1px solid $nav;
+        background-color: white;
+        i{
+            color: $nav;
+        }
+    }
 
     i{
         font-size: 40px;
         color: white;
+        
     }
 }
 
@@ -124,6 +133,9 @@ i{
             gap: 20px;
             background-color: rgb(209, 232, 243);
             padding: 20px;
+            img{
+                width: 100%;
+            }
             .r-text{
                 display: flex;
                 flex-direction: column;
@@ -210,6 +222,7 @@ nav {
                 li {
                     font-size: 11px;
                     font-weight: 300;
+                    cursor: pointer;
                 }
             }
 
@@ -256,6 +269,12 @@ nav {
                 background-color: white;
                 padding: 14px;
                 border: none;
+                cursor: pointer;
+                &:hover{
+background-color: $nav;
+border: 1px solid white;
+color: white;
+                }
             }
         }
 
@@ -323,7 +342,7 @@ nav {
 
                 .robot-img {
                     background-color: rgb(188, 202, 215);
-                    width: 70%;
+                    width: 60%;
                     padding: 20px;
                     img{
                         width: 100%

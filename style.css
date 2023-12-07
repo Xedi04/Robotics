@@ -87,6 +87,14 @@ body {
   right: 0;
   margin-right: 20px;
   margin-bottom: 20px;
+  cursor: pointer;
+}
+#top:hover {
+  border: 1px solid #8a90ff;
+  background-color: white;
+}
+#top:hover i {
+  color: #8a90ff;
 }
 #top i {
   font-size: 40px;
@@ -115,6 +123,9 @@ body {
   gap: 20px;
   background-color: rgb(209, 232, 243);
   padding: 20px;
+}
+.elave .all1 .detail-robot img {
+  width: 100%;
 }
 .elave .all1 .detail-robot .r-text {
   display: flex;
@@ -191,6 +202,7 @@ nav .navbar .div-ul ul {
 nav .navbar .div-ul ul li {
   font-size: 11px;
   font-weight: 300;
+  cursor: pointer;
 }
 nav .navbar .div-ul i {
   font-size: 30px;
@@ -228,6 +240,12 @@ nav .navbar .div-ul i {
   background-color: white;
   padding: 14px;
   border: none;
+  cursor: pointer;
+}
+.improved .impro .impro-1 #btn1:hover {
+  background-color: #8a90ff;
+  border: 1px solid white;
+  color: white;
 }
 .improved .impro .impro-2 {
   width: 50%;
@@ -295,7 +313,7 @@ nav .navbar .div-ul i {
 }
 .robot .robot-all .robot-2 .robot4 .robot-img {
   background-color: rgb(188, 202, 215);
-  width: 70%;
+  width: 60%;
   padding: 20px;
 }
 .robot .robot-all .robot-2 .robot4 .robot-img img {
